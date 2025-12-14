@@ -19,22 +19,21 @@ public class C11Map {
 //        System.out.println(sports.get("배구"));
 
 
-
-//        map의 전체 value 데이터 출력
+////        map의 전체 value 데이터 출력
 //        map의 key값 접근시에는 인덱스 사용 불가능(순서가없음) => for문으로 찾지 못함 => 향상된for문
-//        keySet() : map의 전체 key목록을 반환하는 메서드
+////        keySet() : map의 전체 key목록을 set형태로 반환하는 메서드
 
 //        Set<String> mySet = sports.keySet();
 //        for(String a : mySet) {
 //            System.out.println("key : " + a + " value : " +sports.get(a));
 //        }
-//        위에걸 간단하게 아래처럼 표현할수있음
+////        위에걸 간단하게 아래처럼 표현할수있음
 //        for(String a : sports.keySet()) {
 //            System.out.println("key : " + a + " value : " +sports.get(a));
 //        }
 
-//        values() : map의 전체 value목록을 반환하는 메서드 (잘 안쓰임)
-//        for ( int a : sports.values()) {        //복잡도 : O(n)0
+////        values() : map의 전체 value목록을 반환하는 메서드 (잘 안쓰임)
+//        for ( int a : sports.values()) {        //복잡도 : O(n)
 //            System.out.println(a);
 //        }
 
@@ -55,29 +54,21 @@ public class C11Map {
 //        System.out.println(sports.containsKey("배구"));
 //        System.out.println(sports.containsKey("탁구"));
 
-//        map을 통한 개수 count
+////        map을 통한 개수 count
 //        String[] arr = {"농구","축구","농구","야구","축구"};  //농구:2, 야구:1, 축구:2
 //        Map<String, Integer> myMap = new HashMap<>();
-//        int count = 0;
-//        for (int i = 0; i <= arr.length; i++) {
-//            if(myMap.containsKey("농구")) {
-//                0
-//                myMap.put("농구", )
-//            }
-//        }
-
-        // 담으려고 하는 key가 있으면 기존것 +1
 //        for (String a : arr) {
-//            if(myMap.containsKey(a)){
+//            // 담으려고 하는 key가 있으면 기존것 +1
+//            if( myMap.containsKey(a)) {
 //                myMap.put(a, myMap.get(a)+1);
-//            }else {
+////             key가 없으면 (key, 1)로 세팅
+//            } else {
 //                myMap.put(a,1);
 //            }
 //        }
-//            System.out.println(myMap);
-//             key가 없으면 (key, 1)로 세팅
-//
-//        getOrDefault(키값, 초기값) : key값이 있으면 있는값 리턴, 없을경우 초기값 리턴
+//        System.out.println(myMap);
+
+////        getOrDefault(키값, 초기값) : key값이 있으면 있는값 리턴, 없을경우 초기값 리턴
 //        myMap.put(a, myMap.getOrDefault(a,0)+1);
 //        a를 찾되, a의 key값이 있으면 myMap.get(a)리턴, 없으면 0을 리턴.
 
@@ -120,15 +111,15 @@ public class C11Map {
 //        백준 : 베스트셀러
 
 
-//        TreeMap : key를 정렬(오름차순)하여 map을 저장
-        Map<String, Integer> myMap = new TreeMap<>();
-//        Map<String, Integer> myMap = new TreeMap<>(Comparator.reverseOrder()); //내림차순
-        myMap.put("hello5",1);
-        myMap.put("hello4",2);
-        myMap.put("hello3",3);
-        myMap.put("hello2",4);
-        myMap.put("hello1",5);
-        System.out.println(myMap);
+////        TreeMap : key를 정렬(오름차순)하여 map을 저장
+//        Map<String, Integer> myMap = new TreeMap<>();
+////        Map<String, Integer> myMap = new TreeMap<>(Comparator.reverseOrder()); //내림차순
+//        myMap.put("hello5",1);
+//        myMap.put("hello4",2);
+//        myMap.put("hello3",3);
+//        myMap.put("hello2",4);
+//        myMap.put("hello1",5);
+//        System.out.println(myMap);
 
 //        백준 : 파일정리  (treeMap사용)
 
