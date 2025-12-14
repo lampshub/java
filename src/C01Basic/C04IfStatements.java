@@ -44,6 +44,7 @@ public class C04IfStatements {
 //        String answer = "1234";
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        String input = br.readLine();
+
 //        String result = (input.equals(answer)) ? "문이 열렸습니다" : "비밀번호가 틀렸습니다" ;
 //        System.out.println(result);
 

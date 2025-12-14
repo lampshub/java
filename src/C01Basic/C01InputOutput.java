@@ -53,16 +53,14 @@ public class C01InputOutput {
 //        br.close();
 
 //        BufferedReader + StringTokenizer
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String input = br.readLine();
-//        StringTokenizer를 통해 공백을 기준으로 문자열을 하나씩 잘라서 내부에 토큰화
-        StringTokenizer st = new StringTokenizer(input);
-        System.out.println(st.nextToken());
-        System.out.println(st.nextToken());
-        System.out.println(st.nextToken());
-        br.close();
-
-
+//                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String input = br.readLine();
+////        StringTokenizer를 통해 공백을 기준으로 문자열을 하나씩 잘라서 내부에 토큰화
+//        StringTokenizer st = new StringTokenizer(input);
+//        System.out.println(st.nextToken());
+//        System.out.println(st.nextToken());
+//        System.out.println(st.nextToken());
+//        br.close();
 
     }
 }

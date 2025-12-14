@@ -20,14 +20,16 @@ public class C06LoopStatementAdvance {
 //        int a = 24;
 //        int b = 36;
 //        int answer = 0;
-//
-//        int min = Math.min(a, b);    //a>b? b:a; 둘 중 최소값
-//        for( int i = 1; i < min+1; i++) {
-//            if (a%i==0 && b%i==0) {
-//            answer=i;
+//        int min = Math.min(a,b);
+//        int min = a>b ? b : a;    //삼항연산자로 더 작은수 구하기
+//        for ( int i = 1; i<min+1; i++) {
+//            if(a%i == 0 && b%i == 0){
+//                answer = i;
 //            }
 //        }
-//        for (int i = min; i > 0; i--) {
+//        System.out.println(answer);
+
+//        for (int i = min; i>0; i--) {
 //            if (a % i == 0 && b % i == 0) {
 //                answer = i;
 //                break;
@@ -37,31 +39,22 @@ public class C06LoopStatementAdvance {
 
         // 소수인지 여부 판별. 소수란 1와 자신을 제외한 숫자로 나누어지지 않는 1보다 큰 수.
 //        Scanner sc = new Scanner(System.in);
-
-//        int x = Integer.parseInt(sc.nextLine());
-//        for (int i=2; i<x; i++) {
-//            if ( x%i == 0) {
-//                System.out.println("소수가 아닙니다");
-//                break;
-//            }
-//        }
-//        System.out.println(x +"는 소수입니다.");
-
 //        int input = Integer.parseInt(sc.nextLine());
 //        boolean check = false;
-//        for(int i=2; i%i<=input; i++) { // i%i : Math.sqrt()
+
+//        for(int i=2; i*i<=input; i++) { // i <= Math.sqrt(input)  :루트씌우는 함수
 //            if(input % i == 0){
 //                check = true;
 //                break;
 //            }
 //        }
 //        if (check || input ==1) {
-//            System.out.println("소수 X");
+//            System.out.println("소수가 아닙니다");
 //        } else {
-//            System.out.println("소수 O");
+//            System.out.println(x +"는 소수입니다.");
 //        }
-//
-//
+
+
 //        int[] arr = {1,3,5,7};
 ////        일반 for문을 통한 배열 접근 방식
 //        for (int i=0; i<arr.length; i++){
@@ -80,7 +73,7 @@ public class C06LoopStatementAdvance {
 ////        참조형변수(객체타입)는 기본적으로 변수를 통한 출력시에 메모리값이 출력
 ////        그래서, 내장된 메서드를 통해 힙메모리안의 객체값을 보기좋게 출력할 수 있음
 //        System.out.println(Arrays.toString(arr));
-//
+
 ////          향상된for문을 통한 arr의 저장된 값 변경 -> 원본의 값 변경 불가
 //        for(int a : arr){
 //            a += 10;

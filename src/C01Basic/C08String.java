@@ -35,61 +35,81 @@ public class C08String {
 //        char ch1 = st1.charAt(7);
 //        System.out.println(ch1);
 ////        a의 개수가 몇개인지 출력
-//        int n = 0;
-//        for (int i = 0; i<st1.length(); i++) {
-//
-//            if (st1.charAt(i) == 'a') {
-//                n++;
+//        int count= 0;
+//        for ( int i = 0; i<st1.length(); i++) {
+//            if(st1.charAt(i)=='a'){
+//                count++;
 //            }
 //        }
+//        System.out.println(count);
 
 //        toCharArray : String문자열을 char배열로 변환
 //        for(char ch : st1.toCharArray()) {
 //            if (ch == 'a'){
-//                n++;
+//                count++;
 //            }
 //        }
-//        System.out.println("a의 개수 : " +n);
+//        System.out.println("a의 개수 : " +count);
 
-//        indexOf(문자열) : 특정 문자열의 위치(index) 반환, 가장 먼저 나오는 문자열의 위치 반환
+////      indexOf(문자열) : 특정 문자열의 위치(index) 반환, 가장 먼저 나오는 문자열의 위치 반환
 //        String st1 = "hello java java";
 //        System.out.println(st1.indexOf("java"));    //6
 //        System.out.println(st1.lastIndexOf("java"));    //11
 //        System.out.println(st1.contains("hello"));  //true
 //        System.out.println(st1.contains("world"));  //false
 //
-//        문자열 더하기 : +=사용. 성능측면에서는 추후 배울 StringBuffer, StringBuilder사용
+////        문자열 더하기 : +=사용. 성능측면에서는 추후 배울 StringBuffer, StringBuilder사용
 //        String st1 = "hello";
 //        st1 += " world";
 //        st1 += '1';     // String에 char를 더하면 자동으로 String으로 변환
 //        System.out.println(st1);
 
-//        프로그래머스 - 플랫폼 사용법 (나머지 구하기)
+////        프로그래머스 - 플랫폼 사용법 (나머지 구하기)
 
-//        프로그래머스 - 특정 문자 제거하기
+////        프로그래머스 - 특정 문자 제거하기
+//
+//        String my_string = "abcdef";
+//        String letter = "f";
+//        String answer = "";
+//        for( char a : my_string.toCharArray()) {
+//            if(a != letter.charAt(0)) {
+//                answer += a;
+//            }
+//        }
+//        System.out.println(answer);
 
-//        substring(a,b) : a이상 b미만의 index의 문자를 잘라 문자열로 반환
+
+////        substring(a,b) : a이상 b미만의 index의 문자를 잘라 문자열로 반환
 //        String st1 = "hello world";
 //        System.out.println(st1.substring(0, 5));    //hello
 //        System.out.println(st1.substring(6, st1.length())); //world
 
-//        프로그래머스 - 가운데 글자 가져오기
+////        프로그래머스 - 가운데 글자 가져오기
+//        String s = "qwer";
+//        String answer = "";
+//        if (s.length()%2 == 1) {
+//            answer = s.substring(s.length()/2,s.length()/2+1);
+//        } else {
+//            answer = s.substring(s.length()/2 -1,s.length()/2+1);
+//        }
+//        System.out.println(answer);
 
-//        trim, strip : 문자열 양쪽 끝의 공백 제거
+
+////        trim, strip : 문자열 양쪽 끝의 공백 제거
 //        String st1 = " hello world  ";
 //        String st2 = st1.trim();
 //        String st3 = st1.strip();
 //        System.out.println(st2);
 //        System.out.println(st3);
 
-//        toUpperCase : 모든 문자열을 대문자로 변환, toLowerCase : 소문자로 변환
+////        toUpperCase : 모든 문자열을 대문자로 변환, toLowerCase : 소문자로 변환
 //        String st1 = "Hello";
 //        String st2 = st1.toUpperCase();
 //        String st3 = st1.toLowerCase();
 //        System.out.println(st2);
 //        System.out.println(st3);
 
-//         replace(a,b) : a문자열을 b문자열로 대체
+////         replace(a,b) : a문자열을 b문자열로 대체
 //        String st1 = "hello world world";
 //        String st2 = st1.replace("world", "java");
 //        System.out.println(st2);
@@ -111,22 +131,22 @@ public class C08String {
 //        String answer5 = st1.replaceAll("\\s+","");
 //        System.out.println(answer5);    // \s 가 공백을 의미, +는 여러개임을 의미 -> 공백 여러개
 
-//        전화번호 검증
+////        전화번호 검증
 //        String number = "010-12341234";
 //        boolean check = number.matches("^\\d{3}-\\d{4}-\\d{4}$");
-//        //정규표현식이 길어지면 ^ 이 시작, $가 끝을 의미 / \d는 숫자를 의미 digit
+////        정규표현식이 길어지면 ^이 시작, $가 끝을 의미 / \d는 숫자를 의미 digit
 //        System.out.println(check);
 //        if(check==false){
 //            System.out.println("형식이 잘못됐습니다. 다시 입력해주세요");
 //        }
 
-//        이메일 검증
-//        String email = "abc1234@naver.csom";
+////        이메일 검증
+//        String email = "abc1234@naver.com";
 //        boolean check = Pattern.matches("^[a-z0-9]+@[a-z]+.com$", email);
 ////        + 여러개
 //        System.out.println(check);
 
-//        split : 특정문자를 기준으로 잘라서 문자배열로 만드는 것
+////        split : 특정문자를 기준으로 잘라서 문자배열로 만드는 것
 //        String a = "a:b:c:d";
 //        String[] arr = a.split(":");
 //        System.out.println(Arrays.toString(arr));
@@ -139,7 +159,7 @@ public class C08String {
 //        String[] arr3= b.split("\\s+");   // \s는 공백, +는 여러개
 //        System.out.println(arr3.length);    //4
 
-//        null과 공백의 차이
+////        null과 공백의 차이
 //        String st1 = null;  //null은 문자열 아님
 //        String st2 = "";    //빈문자열은 문자열
 //        String st3 = " ";   //공백
@@ -151,43 +171,45 @@ public class C08String {
 //
 ////        공백의 개수 세기
 //        String abc ="hello    world    java";
+//        int total = 0;
 //        for( int i= 0; i < abc.length(); i++){
-//            int total = 0;
 //            if(abc.substring(i,i+1).isBlank()){
 //                total++;
 //            }
 //        }
+//        System.out.println(total);
+
 //12/10 오후2시 수업
 ////        문자열 조립 : StringBuffer, StringBuilder
-//        String[] arr = {"java","puthon","javascript"};
+//        String[] arr = {"java","python","javascript"};
 //        StringBuffer sb = new StringBuffer();
 //        String result = "";
 //        for( int i = 0; i < arr.length; i++)   {
 //            sb.append(arr[i]);
 //            sb.append("\n");    // \n은 줄바꿈을 의미
 //        }
-//        sb.insert(0, "C++");    //문자열 중간에 insert하는 것은 성능저하를 발생
-//       sb.deleteCharAt(0);
+////        sb.insert(0, "C++");    //문자열 중간에 insert하는 것은 성능저하를 발생
+////       sb.deleteCharAt(0);     //마지막 index를 삭제하는 것 외에는 성능저하 발생
+////        sb.deleteCharAt(sb.length()-1); //마지막 index를 삭제
 //        result = sb.toString();
 //        System.out.println(result);
 
-//        StringBuilder는 성능이 뛰어나지만, 동시성문제있음(Thread-Safe하지않음)
-//        예를 들어, 쓰레드A 가 appen("hello") 쓰레드B가 append("world")
-//        이 두작업이 중산에 섞여 "heworlllo" 이런식으로 잘못된 값으르 만들수 있음
+////        StringBuilder는 성능이 뛰어나지만, 동시성문제있음(Thread-Safe하지않음)
+//        예를 들어, 쓰레드A 가 append("hello") 쓰레드B가 append("world")
+//        이 두작업이 중간에 섞여 "heworldllo" 이런식으로 잘못된 값으로 만들 수 있음
 //        StringBuilder sb2 = new StringBuilder();
-
-//        StringBuilder sb2 = new StringBuilder();
-//        문자열 뒤집기   // insert 여기에 ???
+////        문자열 뒤집기   // insert 쓰면 성능이 떨어지니 사용 권하지 X
 //        String st1 = "hello";
-//        for (int i = st1.length()- 1; i>=0; i--){
-//            sb2.append(st1.charAt(i));
+//        for (int a = st1.length()-1; a >= 0; a--) {
+//            sb2.append(st1.charAt(a));
 //        }
 //        System.out.println(sb2);
+//
 //        StringBuilder sb3 = new StringBuilder(st1);
 //        sb3.reverse();
 //        System.out.println(sb3);
 
-//        프로그래머스 - 문자열밀기
+////        프로그래머스 - 문자열밀기** 못풀었음 !
 
 //        문자열비교
 //        String st1 = "hello";
@@ -195,10 +217,10 @@ public class C08String {
 //        String st3 = "hello";
 //        String st4 = "hfllo";
 //
-//        System.out.println(st1.compareTo(st2)); //양수
-//        System.out.println(st2.compareTo(st1)); //음수
+//        System.out.println(st1.compareTo(st2)); //양수 4 h-d
+//        System.out.println(st2.compareTo(st1)); //음수 -4 d-h
 //        System.out.println(st1.compareTo(st3)); //0
-//        System.out.println(st4.compareTo(st3)); //양수
+//        System.out.println(st4.compareTo(st3)); //양수 1 f-e
 
 
     }

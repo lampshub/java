@@ -11,31 +11,31 @@ public class studyQ1 {
 
 //        백준 : 베스트셀러
         //사전순 정렬 : 리스트에 가장 많이 팔린책을 담는다 => 정렬한다
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int N = Integer.parseInt(br.readLine());
-        Map<String, Integer> book = new HashMap<>();
-        for (int i = 0; i < N; i++) {
-            String a = br.readLine();
-            if (book.containsKey(a)) {
-                book.put(a, book.get(a) + 1);
-            } else {
-                book.put(a, 1);
-            }
-        }
-        int max = Integer.MIN_VALUE;
-        List<String> book_name = new ArrayList<>();
-        for (String b : book.keySet()) {
-            if (book.get(b) >= max) {
-                max = book.get(b);
-                }
-            }
-        for(String c : book.keySet()) {
-            if (book.get(c) == max) {
-                book_name.add(c);
-            }
-        }
-            book_name.sort(Comparator.naturalOrder());
-            System.out.println(book_name.get(0));
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        int N = Integer.parseInt(br.readLine());
+//        Map<String, Integer> book = new HashMap<>();
+//        for (int i = 0; i < N; i++) {
+//            String a = br.readLine();
+//            if (book.containsKey(a)) {
+//                book.put(a, book.get(a) + 1);
+//            } else {
+//                book.put(a, 1);
+//            }
+//        }
+//        int max = Integer.MIN_VALUE;
+//        List<String> book_name = new ArrayList<>();
+//        for (String b : book.keySet()) {
+//            if (book.get(b) >= max) {
+//                max = book.get(b);
+//                }
+//            }
+//        for(String c : book.keySet()) {
+//            if (book.get(c) == max) {
+//                book_name.add(c);
+//            }
+//        }
+//            book_name.sort(Comparator.naturalOrder());
+//            System.out.println(book_name.get(0));
 
 
 //      완주하지 못한 선수
@@ -194,6 +194,9 @@ public class studyQ1 {
 //        Arrays.sort(answer);
 //        System.out.println(Arrays.toString(answer));
 
+//        가운데 글자 가져오기
+
+
 
             // 특정 문자 제거하기
 //        String my_string="BCBdbe";
@@ -215,19 +218,37 @@ public class studyQ1 {
 //        }
 //        System.out.println(answer);
 
-//        String A = "hello";
-//        String B = "ohell";
-//        StringBuilder br = new StringBuilder();
+//        프로그래머스 문자열밀기
+//        String A="hello";
+//        String B="lohel";
+//        StringBuffer sb = new StringBuffer(A);
 //        int answer = 0;
-//        if ( !A.equals(B)) {
-//            br.append(A.substring(A.length()-1,A.length()));
-//            A =  A.substring(A.length()-1,A.length());
-//            System.out.println(A);
-//            System.out.println(br);
-//            A = br + A;
+//        for(int i = 0; i<A.length(); i++);
+//            sb.insert(0,끝자릿값);
+//            sb.deleteCharAt(sb.length()-1);
 //            answer++;
+//            if(B.equals(sb)) {
+//                break;
+//            }
+
+//        String db = A+A;    //hellohello
+//        if (db.contains(B)) {
+//            answer = A.length()-  db.indexOf(B);
+//        } else answer = -1;
+//        System.out.println(answer);
+
+//        String A = "hello";
+//        String B = "lohel";  //hellohello
+//        int answer = 0;
+//        while (A!=B){
+//            StringBuffer sb = new StringBuffer();
+//            sb.append(A.substring(A.length()-1,A.length()));
+//            A = sb + A.substring(0,A.length()-1);
+//            answer++;
+//
 //        }
 //        System.out.println(answer);
+
 
 //        A를 StringBuilder로 변환
 //        A를 마지막값을 앞으로 insert, 마지막값 제거

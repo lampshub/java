@@ -35,6 +35,7 @@ public class C05LoopStatement {
 //        반복되는 도어락키 예제
 //        만약 비밀번호를 맞추면 즉시 종료 -> 문이 열렸습니다 출력
 //        5회입력을 초과할때까지 맞추지 못하면 종료 -> 비밀번호 5회초과 출력
+
 //        int count = 0;
 //        while (true) {
 //            String answer = "1234";
@@ -48,24 +49,6 @@ public class C05LoopStatement {
 //                count++;
 //            }
 //            if (count == 5) {
-//                System.out.println("비밀번호 5회초과");
-//                break;
-//            }
-//        }
-
-//        int count = 0;
-//        while(true) {
-//            String answer = "1234";
-//            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//            String input = br.readLine();
-//            if(input.equals(answer)){
-//                System.out.println("문이 열렸습니다.");
-//                break;
-//            } else {
-//                System.out.println("비밀번호가 틀렸습니다.");
-//            }
-//             count++;
-//            if(count == 5) {
 //                System.out.println("비밀번호 5회초과");
 //                break;
 //            }

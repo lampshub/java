@@ -49,11 +49,11 @@ public class C02Variable {
 //        }
 //        System.out.println(total2/10);
 //
-////      소수점 연산 오차 해결방법2 : BigDecimal 클래스 사용
+////        소수점 연산 오차 해결방법2 : BigDecimal 클래스 사용
 //        double d1 = 1.03;
 //        double d2 = 0.42;
 //        System.out.println(d1-d2);
-////         값을 입력받아 저장할떄부터 문자로 입력을 받아 오차문제를 해결 (BigDecimal)
+////        값을 입력받아 저장할떄부터 문자로 입력을 받아 오차문제를 해결 (BigDecimal)
 //        BigDecimal b1 = new BigDecimal("1.03");
 //        BigDecimal b2 = new BigDecimal("0.42");
 //        double result = b1.subtract(b2).doubleValue();
@@ -63,7 +63,7 @@ public class C02Variable {
 //        char c1 = '가';
 //        String st1 = "가";
 
-////      String 또는 char 배열 최초 선언시 초기값이 null이 할당(int는 0, boolean은 false)
+////        String 또는 char 배열 최초 선언시 초기값이 null이 할당(int는 0, boolean은 false)
 //        String[] stArr = new String[10];
 //        System.out.println(stArr[0]);
 
