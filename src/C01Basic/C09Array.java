@@ -36,7 +36,7 @@ public class C09Array {
 //        myList.add(new int[]{10,20,30,40,50});
 //        myList.add({10,20,30,40,50}); //사용불가 - {}안의 값이 배열인지 아닌지 확인불가
 
-//         85,65,90으로 구성된 int배열을 선언하고 총합과 평균을 구하시오
+////         85,65,90으로 구성된 int배열을 선언하고 총합과 평균을 구하시오
 //        int[] a = new int[]{85,65,90};
 //        int sum = 0;
 //        double avg = 0;
@@ -86,10 +86,10 @@ public class C09Array {
 //        int[] arr = {10,20,30,40,50};
 //        int[] newArr = new int[arr.length];
 //
-////        for (int i = arr.length-1; i>=0; i--){
-////            newArr[(arr.length-1)-i] = arr[i];
-////        }
-////        System.out.println(Arrays.toString(newArr));
+//        for (int i = arr.length-1; i>=0; i--){
+//            newArr[(arr.length-1)-i] = arr[i];
+//        }
+//        System.out.println(Arrays.toString(newArr));
 //
 //        for (int i=0; i<arr.length; i++){
 //            newArr[arr.length-i-1] = arr[i];
@@ -116,8 +116,8 @@ public class C09Array {
 //            Arrays.sort(arr2,Comparator.reverseOrder());
 //            System.out.println(Arrays.toString(arr2));
 
-//            정렬 알고리즘 구현 (선택정렬 알고리즘)
-//        구현로직 1) 2중for문을 사용하여 index마다 최소값찾기 2) 현재위치와 자리 change
+////            정렬 알고리즘 구현 (선택정렬 알고리즘)
+////        구현로직 1) 2중for문을 사용하여 index마다 최소값찾기 2) 현재위치와 자리 change
 //        1. 제일 작은 수 찾아 0번째랑 자리 바꾸기 min, replace?
 //        2. 1번째부터 제익 작은 수 찾아서 자리바꾸기
 //        int[] arr = {17, 12, 20, 10, 15};
@@ -146,7 +146,7 @@ public class C09Array {
 //            }
 //        }System.out.println(Arrays.toString(arr));
 
-//        방법1. 강사님이 의도하신 방법!
+////        방법1. 강사님이 의도하신 방법!
 //            for (int i = 0; i < arr.length; i++) {
 //                int min = arr[i];  // max값으로 안두고 arr[i] 자기자신값으로 두고 비교해도 됨
 //                int minIndex = i;
@@ -174,9 +174,9 @@ public class C09Array {
 //            }
 //        }
 //        System.out.println(Arrays.toString(arr));
-//      선택정렬의 복잡도 : O(n^2).  java 기본 내장 정렬함수의 복잡도 : O(n*log(n))
+////      선택정렬의 복잡도 : O(n^2).  java 기본 내장 정렬함수의 복잡도 : O(n*log(n))
 
-//        조합문제 : 모두 각기 다른 숫자의 배열이 있을때, 만들어질 수 있는 두 숫자의 조합
+////        조합문제 : 모두 각기 다른 숫자의 배열이 있을때, 만들어질 수 있는 두 숫자의 조합
 //        ex) (10,20), (10,30), (10,40), (10,50), (20,30),(20,40), ...
 //        int[] arr = {10,20,30,40,50};
 //        for ( int i = 0; i < arr.length; i++) {     //i=4 일때, 안에 for문은 j 가 해당 안됌
@@ -195,7 +195,7 @@ public class C09Array {
 //            }
 
 
-//          배열의 중복제거 : set자료구조(중복X, 순서X) 활용
+////         배열의 중복제거 : set자료구조(중복X, 순서X) 활용
 ////        ex) 10,20,30,40만 있도록
 //        int[] arr = {10,30,20,30,10,40};
 //        Set<Integer> mySet = new HashSet<>();
@@ -233,21 +233,21 @@ public class C09Array {
 //        int target = 11;
 ////        찾고자 하는 값이 있으면 해당 index리턴
 ////        찾고자 하는 값이 없으면 음수값 리턴
-//        int index = Arrays.binarySearch(arr, target);
-//        int index2 = Arrays.binarySearch(arr, 13);
+//        int index = Arrays.binarySearch(arr, target); //6
+//        int index2 = Arrays.binarySearch(arr, 13);    //-8
 //        System.out.println(index);
 //        System.out.println(index2);
 
-//      백준문제 - 수 찾기 (1920)
+////      백준문제 - 수 찾기 (1920)
 
 
-//        배열값 비교
+////        배열값 비교
 //        int[] arr1 = {10,20,30};
 //        int[] arr2 = {10,20,30};
 //        System.out.println(arr1 == arr2); //false
 //        System.out.println(Arrays.equals(arr1, arr2)); //true
 
-//        배열복사
+////        배열복사
 //        Arrays.copyOf(배열명, length)
 //        Arrays.copyOfRange(배열명, start, end)
 //        int[] arr = {1,4,6,7,8,1,2,4,6};
@@ -256,7 +256,7 @@ public class C09Array {
 //        int[] arr2 = Arrays.copyOfRange(arr, 3, 6);
 //        System.out.println(Arrays.toString(arr2));
 
-//        Arrays.fill : 배열에 모든값을 변경(채우기)
+////        Arrays.fill : 배열에 모든값을 변경(채우기)
 //        String[] arr = new String[5];
 //        for (int i = 0; i<arr.length; i++) {
 //            arr[i] = "";
@@ -265,9 +265,9 @@ public class C09Array {
 //        Arrays.fill(arr, "1");
 //        System.out.println(Arrays.toString(arr));
 
-//      2차원배열의 선언과 값할당
+////      2차원배열의 선언과 값할당
 //        {{1,2},{1,2},{1,2}}
-//      방법1 : 선언후 할당 방식
+////      방법1 : 선언후 할당 방식
 //        int[][] arr1= new int[3][2];
 //        arr[0][0]=1;
 //        arr[0][1]=2;
@@ -279,7 +279,7 @@ public class C09Array {
 ////      방법2 : 리터럴방식
 //        int[][] arr2 =  {{1,2},{1,2},{1,2}};
 
-//        [3][4]사이즈의 2차원배열을 선언하고, 1~12까지 숫자값을 각 배열에 순차적으로 할당
+////        [3][4]사이즈의 2차원배열을 선언하고, 1~12까지 숫자값을 각 배열에 순차적으로 할당
 //          {{1,2,3,4},{5,6,7,8},{9,10,11,12}}
 
 //        int[][] arr = new int[3][4];
@@ -290,7 +290,7 @@ public class C09Array {
 //            num++;
 //            }
 //        }
-//            2차원 배열의 출력
+////            2차원 배열의 출력
 //        System.out.println(arr);    //2차원배열의 heap의 주소값
 //        System.out.println(Arrays.toString(arr));  //각1차원배열의 heap주소값
 //        System.out.println(Arrays.deepToString(arr));  //각1차원배열의 값을 출력
@@ -298,7 +298,7 @@ public class C09Array {
             //프로그래머스 - 행렬의 덧셈
             //프로그래머스 - K번째수 >다시풀어보기**
 
-//        가변배열 : 2차원 배열에서 각 1차원의 배열의 길이가 서로 다를 수 있는 배열의 구조
+////        가변배열 : 2차원 배열에서 각 1차원의 배열의 길이가 서로 다를 수 있는 배열의 구조
 //            int[][] arr1 = {{1, 2}, {1, 2, 3}, {1, 2, 3, 4}};
 //
 ////        배열 전체길이는 반드시 사전할당되어야하지만, 1차원배열의 길이는 추후 할당가능

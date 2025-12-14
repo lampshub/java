@@ -19,12 +19,12 @@ public class C12Set {
 //        백준 - 수 찾기 (1920) -> 다시 풀어보기
 
 //        TreeSet : 데이터를 오름차순정렬
-        Set<String> mySet2 = new TreeSet<>();
-        mySet2.add("야구");
-        mySet2.add("농구");
-        mySet2.add("야구");
-        mySet2.add("축구");
-        System.out.println(mySet2);
+//        Set<String> mySet2 = new TreeSet<>();
+//        mySet2.add("야구");
+//        mySet2.add("농구");
+//        mySet2.add("야구");
+//        mySet2.add("축구");
+//        System.out.println(mySet2);
 
 //        백준 : 숫자카드 (10815)
 

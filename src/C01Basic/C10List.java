@@ -4,7 +4,7 @@ import java.util.*;
 
 public class C10List {
     public static void main(String[] args) {
-//        List 선언방법 1
+////        List 선언방법 1
 //        ArrayList<String> myList1 = new ArrayList<String>();
 //        ArrayList<String> myList2 = new ArrayList<>();
 //
@@ -31,12 +31,13 @@ public class C10List {
 //        for (int i : intArr) {
 //            myList5.add(i);
 //        }
+//        System.out.println(myList5);
 
-//        add : 리스트에 값을 하나씩 추가하는 메서드
+////        add : 리스트에 값을 하나씩 추가하는 메서드
 //        List<Integer> myList = new ArrayList<>();
 //        myList.add(10);
 //        myList.add(20);
-//        myList.add(0,30); //List는 중간위치에 데이터를 삽입/삭제한느 작업은 비효율적
+//        myList.add(0,30); //List는 중간위치에 데이터를 삽입/삭제하는 작업은 비효율적
 //        System.out.println(myList);
 //
 ////        get(index) : 특정 index의 요소 반환
@@ -55,15 +56,15 @@ public class C10List {
 //            System.out.println(j);
 //        }
 
-//        remove : 값 삭제
+////        remove : 값 삭제
 //        List<Integer> num = new ArrayList<>();
 //        num.add(10);
 //        num.add(20);
 //        num.add(30);
 ////        num.remove(0);  //이렇게 앞에것을 삭제하면 뒤에것들이 한칸씩 땡겨온다
-//        num.remove(num.size()-1);   //그래서 맨 뒤에걸 삭제하는 방식으로 사용
+////        num.remove(num.size()-1);   //그래서 맨 뒤에걸 삭제하는 방식으로 사용
 
-//        indexOf : 특정값을 찾아 index return (가장 먼저 나오는 값)
+////        indexOf : 특정값을 찾아 index return (가장 먼저 나오는 값)
 //        List<Integer> myList = new ArrayList<>();
 //        myList.add(10);
 //        myList.add(20);
@@ -75,9 +76,9 @@ public class C10List {
 //        System.out.println(myList.contains(20));
 
 
-//        프로그래머스 : n의 배수 고르기    ** 다시 풀어보기
+////        프로그래머스 : n의 배수 고르기    ** 다시 풀어보기
 
-//        정렬 : 방법2가지 (Collections클래스의 sort메서드 사용, 객체의 sort메서드 사용)
+////       정렬 : 방법2가지 (Collections클래스의 sort메서드 사용, 객체의 sort메서드 사용)
 //        List<Integer> myList = new ArrayList<>();
 //        myList.add(5);
 //        myList.add(3);
@@ -97,7 +98,7 @@ public class C10List {
 //        myList.sort(Comparator.reverseOrder()); //내림차순
 //        System.out.println(myList);
 
-//        이중리스트 : 리스트안의 리스트 [[1,2,3],[4,5,6],...]
+////        이중리스트 : 리스트안의 리스트 [[1,2,3],[4,5,6],...]
 //        [[1,2,3],[4,5,6]]
 //        List<List<Integer>> myList = new ArrayList<>();
 //        List<Integer> m1 = new ArrayList<>();
@@ -111,7 +112,7 @@ public class C10List {
 //        myList.get(1).add(6);   //[[1,2,3],[4,5,6]]
 //        System.out.println(myList);
 
-//        [[1,2,3],[4,5,6],[7,8,9],...,[58,59,60]] 형태의 이중리스트 생성
+////        [[1,2,3],[4,5,6],[7,8,9],...,[58,59,60]] 형태의 이중리스트 생성
 //        List<List<Integer>> num = new ArrayList<>();
 //        int number = 1;
 //        for (int i = 0; i<60/3; i++){

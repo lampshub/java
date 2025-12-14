@@ -9,7 +9,7 @@ import static java.lang.Integer.parseInt;
 public class studyQ1 {
     public static void main(String[] args) throws IOException {
 
-//        백준 : 베스트셀러
+////        백준 : 베스트셀러
         //사전순 정렬 : 리스트에 가장 많이 팔린책을 담는다 => 정렬한다
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        int N = Integer.parseInt(br.readLine());
@@ -38,7 +38,7 @@ public class studyQ1 {
 //            System.out.println(book_name.get(0));
 
 
-//      완주하지 못한 선수
+////      완주하지 못한 선수
 //        String[] participant = {"leo", "kiki", "eden"};
 //        String[] completion = {"eden", "kiki"};
 //        Map<String, Integer> running = new HashMap<>();
@@ -65,14 +65,14 @@ public class studyQ1 {
 //        System.out.println(answer);
 
 
-//        의상
+////        의상
 //        얼굴2개+1(안입었다), 상의2개+1,하의2개+1 => 3*3*3 -1(다 안입는것);
 //        String[][] clothes = new String[][] {{"yellow_hat", "headgear"}, {"blue_sunglasses", "eyewear"}, {"green_turban", "headgear"}};
 //        Map<String, String> type = new HashMap<>();
 //            int answer = 0;
 
 
-//        n의 배수 고르기
+////        n의 배수 고르기
 //        int n = 3;
 //        int[] numlist = {4,5,6,7,8,9,10,11,12};
 //        List<Integer> answer = new ArrayList<>();
@@ -88,7 +88,7 @@ public class studyQ1 {
 //
 
 
-//        k번째수
+////        k번째수
 //        int[] array = {1,5,2,6,3,7,4};
 //        int[][] commands = {{2,5,3},{4,4,1},{1,7,3}};
 //        int[] answer = new int[commands.length];
