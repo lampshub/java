@@ -31,7 +31,7 @@ public class C07ReferenceType {
 ////        배열은 toString메서드가 별도로 구현되어있기 때문에 별도로 호출해줘야함
 //        System.out.println(Arrays.toString(arr2));
 
-//        원시자료형은 스택메모리에 값이 저장되므로, ==로 비교시 값자제를 비교
+//        원시자료형은 스택메모리에 값이 저장되므로, ==로 비교시 값자체를 비교
 //        int a = 10;
 //        int b = 10;
 //        System.out.println(a==b);
