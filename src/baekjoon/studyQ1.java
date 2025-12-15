@@ -9,8 +9,157 @@ import static java.lang.Integer.parseInt;
 public class studyQ1 {
     public static void main(String[] args) throws IOException {
 
-////        백준 : 베스트셀러
-        //사전순 정렬 : 리스트에 가장 많이 팔린책을 담는다 => 정렬한다
+
+////        프로그래머스 : 같은 숫자는 싫어
+//        int[] arr = new int[]{1,1,3,3,0,1,1};
+////        int[] answer = {};
+//        Stack<Integer> st = new Stack<>();
+//        for(int i : arr) {
+//            if(st.isEmpty()) {
+//                st.push(i);
+//            } else {
+//                if(st.peek() != i) {
+//                    st.push(i);
+//                }
+//            }
+//        }
+//
+//        int[] answer = new int[st.size()];
+//        for (int i=st.size()-1; i>=0; i--) {
+//        answer[i] = st.pop();
+//        }
+//        System.out.println(Arrays.toString(answer));
+
+
+////        프로그래머스 : 올바른 괄호
+//        String s = "(()(";
+//        boolean answer = true;
+//        Stack<String> st = new Stack<>();
+//        for ( char a : s.toCharArray()) {
+//            if (a == '(') {
+//                st.add(String.valueOf(a));
+//            } else {
+//                if (!st.isEmpty() && st.peek().equals("(")) {
+//                    st.push(String.valueOf(a));
+//                    st.pop();
+//                    st.pop();
+//                } else {
+//                    answer = false;
+//                    break;
+//                }
+//            }
+//        } if(!st.isEmpty()) answer=false;
+//        System.out.println(answer);
+
+////        백준 : 카드 정렬하기
+
+
+////        백준 : 카드2, 요세푸스 문제 0
+////        카드 2
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        int N = Integer.parseInt(br.readLine());
+//
+//        Queue<Integer> st = new LinkedList<>();
+//        for(int i=1; i<=N; i++){
+//            st.add(i);
+//        }
+//
+//        while (st.size() > 1) {
+//            st.remove();
+//            int temp = st.remove();
+//            st.add(temp);
+//        }
+//        System.out.println(st.peek());
+
+////        요세푸스 문제
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        StringBuffer sb = new StringBuffer();
+//        String[] st = br.readLine().split(" ");
+//        int N = Integer.parseInt(st[0]);
+//        int K = Integer.parseInt(st[1]);
+//        Queue<Integer> que = new LinkedList<>();
+//
+//        for(int i=1; i<=N; i++){
+//            que.add(i);
+//        }
+//        sb.append("<");
+//        while (que.size() > 1) {
+//            for(int j = 1; j<K; j++){
+//                que.add(que.poll());
+//            }
+//            sb.append(que.poll() + ", ");
+//        }
+//        sb.append(que.poll()).append(">");
+//        System.out.print(sb);
+
+
+
+
+////        백준 : 최소 힙
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        int N = Integer.parseInt(br.readLine());
+//        Queue<Integer> pq = new PriorityQueue<>();
+//
+//        for ( int i =0; i<N; i++) {
+//            int x = Integer.parseInt(br.readLine());
+//            if(x>0) {
+//                pq.add(x);
+//            } else {
+//                if(!pq.isEmpty()) System.out.println(pq.poll());
+//                else System.out.println(0);
+//            }
+//        }
+//         StringBuffer / StringBuilder에 담아서 출력하기!!
+
+////        프로그래머스 : 더 맵게 **더 풀어보기
+////
+//        int[] scoville = new int[]{1,2,3,9,10,12};
+//        int K = 7;
+//        int answer = 0;
+//
+//        Queue<Integer> pq = new PriorityQueue<>();
+//        for (int a : scoville) {
+//            pq.add(a);
+//        }
+//
+//        while (pq.size() >= 2 && pq.peek()<K) {
+//                int min = pq.poll();
+//                int secondMin = pq.poll();
+//                int mix = min + secondMin * 2;
+//                pq.add(mix);
+//                answer++;
+//                }
+//        if(pq.size()<2 && pq.peek()< K){
+//            answer = -1;
+//            }
+//
+//                System.out.println(answer);
+
+
+////        treeMap 활용해서
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        int N = Integer.parseInt(br.readLine());
+//
+//        Map<String, Integer> book = new TreeMap<>();
+//        for (int i = 0; i < N; i++) {
+//            String a = br.readLine();
+//            if (book.containsKey(a)) {
+//                book.put(a, book.get(a) + 1);
+//            } else {
+//                book.put(a, 1);
+//            }
+//        }
+//        int max = Integer.MIN_VALUE;
+//        List<String> book_name = new ArrayList<>();
+//        for (String b : book.keySet()) {
+//            if (book.get(b) >= max) {
+//                max = book.get(b);
+//            }
+//        }
+
+
+//////        백준 : 베스트셀러 - 아직 못품!
+//        //사전순 정렬 : 리스트에 가장 많이 팔린책을 담는다 => 정렬한다
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        int N = Integer.parseInt(br.readLine());
 //        Map<String, Integer> book = new HashMap<>();
