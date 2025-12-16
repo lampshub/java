@@ -1,5 +1,6 @@
 package baekjoon;
 
+import java.awt.*;
 import java.io.*;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -51,7 +52,7 @@ public class studyQ1 {
 //        } if(!st.isEmpty()) answer=false;
 //        System.out.println(answer);
 
-////        백준 : 카드 정렬하기
+////        백준 : 카드 정렬하기 (우선순위큐 - pq)
 
 
 ////        백준 : 카드2, 요세푸스 문제 0
@@ -59,6 +60,7 @@ public class studyQ1 {
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        int N = Integer.parseInt(br.readLine());
 //
+
 //        Queue<Integer> st = new LinkedList<>();
 //        for(int i=1; i<=N; i++){
 //            st.add(i);
@@ -187,7 +189,7 @@ public class studyQ1 {
 //            System.out.println(book_name.get(0));
 
 
-////      완주하지 못한 선수
+////      프로그래머스 : 완주하지 못한 선수
 //        String[] participant = {"leo", "kiki", "eden"};
 //        String[] completion = {"eden", "kiki"};
 //        Map<String, Integer> running = new HashMap<>();
@@ -214,7 +216,7 @@ public class studyQ1 {
 //        System.out.println(answer);
 
 
-////        의상
+////      프로그래머스 :  의상 --  아직 못품
 //        얼굴2개+1(안입었다), 상의2개+1,하의2개+1 => 3*3*3 -1(다 안입는것);
 //        String[][] clothes = new String[][] {{"yellow_hat", "headgear"}, {"blue_sunglasses", "eyewear"}, {"green_turban", "headgear"}};
 //        Map<String, String> type = new HashMap<>();
@@ -274,8 +276,75 @@ public class studyQ1 {
 //
 //        System.out.println(Arrays.deepToString(answer));
 
+////        백준 : 파일정리  (treeMap사용)
 
-////        백준 1920 수찾기
+
+
+
+////        백준 : 숫자카드 (10815)
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        StringBuilder sb = new StringBuilder();
+//        int N = Integer.parseInt(br.readLine());
+//        Set<Integer> nset = new HashSet<>();
+//        String[] st = br.readLine().split(" ");
+//
+//        for(int i=0; i<N; i++)  {
+//            nset.add(Integer.parseInt(st[i]));
+//        }
+//
+//        int M = Integer.parseInt(br.readLine());
+//        int[] intarr = new int[M];
+//        String[] st2 = br.readLine().split(" ");
+//
+//        for( int i=0; i<M; i++) {
+//            intarr[i] = Integer.parseInt(st2[i]);
+//        }
+//
+//        for(int a : intarr) {
+//            int has = 0;
+//            if(nset.contains(a)) {
+//                has = 1;
+//            }
+//            sb.append(has + " ");
+//        }
+//        System.out.println(sb);
+
+
+////        프로그래머스 : 폰켓몬 (종류구하기 -> 중복제거 -> set) -- 아직 못함
+
+
+
+
+
+
+
+////        백준 1920 수찾기 (set 이용)
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        StringBuilder sb = new StringBuilder();
+//        int N = Integer.parseInt(br.readLine());
+//        Set<Integer> nset = new HashSet<>();
+//        String[] st = br.readLine().split(" ");
+//        for(int i=0; i<N; i++) {
+//            nset.add(Integer.parseInt(st[i]));
+//        }
+//        int M = Integer.parseInt(br.readLine());
+//        int[] marr = new int[M];
+//        String[] st2 = br.readLine().split(" ");
+//        for(int i=0; i<M; i++) {
+//            marr[i] = Integer.parseInt(st2[i]);
+//        }
+//
+//        for(int a : marr) {
+//            int has = 0;
+//            if(nset.contains(a)) {
+//                has = 1;
+//            }
+//
+//            sb.append(has + "\n");
+//        }
+//            System.out.println(sb);
+
+
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        int N = Integer.parseInt(br.readLine());
 //        int[] intArr = new int[N];
@@ -326,7 +395,7 @@ public class studyQ1 {
 
 
 //
-//      두 수 뽑아서 더하기
+////      두 수 뽑아서 더하기
 //        int[] numbers = {2, 1, 3, 4, 1};
 //        Set<Integer> sum = new HashSet<>();
 //        for (int i = 0; i < numbers.length; i++) {
@@ -343,11 +412,11 @@ public class studyQ1 {
 //        Arrays.sort(answer);
 //        System.out.println(Arrays.toString(answer));
 
-//        가운데 글자 가져오기
+////        가운데 글자 가져오기
 
 
 
-            // 특정 문자 제거하기
+////        특정 문자 제거하기
 //        String my_string="BCBdbe";
 //        String letter="B";
 //        "abcde" : 결과
@@ -367,7 +436,7 @@ public class studyQ1 {
 //        }
 //        System.out.println(answer);
 
-//        프로그래머스 문자열밀기
+////        프로그래머스 문자열밀기
 //        String A="hello";
 //        String B="lohel";
 //        StringBuffer sb = new StringBuffer(A);

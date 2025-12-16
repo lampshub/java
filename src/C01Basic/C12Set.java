@@ -16,7 +16,7 @@ public class C12Set {
 //        System.out.println(mySet);
 //        System.out.println(mySet.contains("야구")); // O(1)의 복잡도
 
-////        백준 - 수 찾기 (1920) -> 다시 풀어보기
+////        백준 - 수 찾기 (1920)
 
 //        TreeSet : 데이터를 오름차순정렬
 //        Set<String> mySet2 = new TreeSet<>();
