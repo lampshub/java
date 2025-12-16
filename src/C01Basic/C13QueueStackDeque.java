@@ -74,7 +74,7 @@ public class C13QueueStackDeque {
 //        blockingQueue.offer("문서1");
 //        blockingQueue.offer("문서2");
 //        blockingQueue.offer("문서3");
-//        blockingQueue.offer("문서4");   //제한된 길이까지 add. 에러발생X
+//        blockingQueue.offer("문서4");   //길이제한이 있다면 제한된 길이까지만 add. 에러발생X
 //        System.out.println(blockingQueue);
 
 ////        우선순위큐PQ : 데이터를 poll할때 정렬된 데이터결과값(최소값/최대값) 보장 (어렵고 중요!!)
@@ -94,7 +94,7 @@ public class C13QueueStackDeque {
 
 ////        백준 : 최소 힙
 
-////        프로그래머스 : 더 맵게 ** 더 풀어보기
+////        프로그래머스 : 더 맵게 ** (힙자료구조) 더 풀어보기
 
 
 
@@ -116,6 +116,7 @@ public class C13QueueStackDeque {
 
 
 //        프로그래머스 : 올바른 괄호
+
 //        프로그래머스 : 같은 숫자는 싫어
 
 
