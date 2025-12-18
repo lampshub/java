@@ -42,7 +42,7 @@ public class C10List {
 //
 ////        get(index) : 특정 index의 요소 반환
 //        System.out.println(myList.get(2));
-//
+
 ////        size : 리스트의 개수(길이)를 반환
 //        System.out.println(myList.size());
 //
@@ -125,22 +125,22 @@ public class C10List {
 //        System.out.println(num);
 
 //        리스트안의 배열   [{10,20},{1,2,3},{4,3,2,1}]
-        List<int[]> myList = new ArrayList<>();
-        int[] arr = new int[2];
-        arr[0] = 10;
-        arr[1] = 20;
-        myList.add(arr);
-
-        myList.add(new int[3]);
-        myList.get(1)[0]=1;
-        myList.get(1)[1]=2;
-        myList.get(1)[2]=3;
-
-        myList.add(new int[]{4,3,2,1});
-//        System.out.println(myList); //배열주소값이 출력 [x1배열주소, x2배열주소, x3배열주소]
-        for (int i = 0; i< myList.size(); i++) {
-            System.out.print(Arrays.toString(myList.get(i)));
-        }
+//        List<int[]> myList = new ArrayList<>();
+//        int[] arr = new int[2];
+//        arr[0] = 10;
+//        arr[1] = 20;
+//        myList.add(arr);
+//
+//        myList.add(new int[3]);
+//        myList.get(1)[0]=1;
+//        myList.get(1)[1]=2;
+//        myList.get(1)[2]=3;
+//
+//        myList.add(new int[]{4,3,2,1});
+////        System.out.println(myList); //배열주소값이 출력 [x1배열주소, x2배열주소, x3배열주소]
+//        for (int i = 0; i< myList.size(); i++) {
+//            System.out.print(Arrays.toString(myList.get(i)));
+//        }
 
     }
 }

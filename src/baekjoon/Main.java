@@ -1,6 +1,8 @@
 package baekjoon;
 
 import java.io.*;
+import java.time.Instant;
+import java.time.LocalDate;
 import java.util.*;
 
 import static java.lang.Integer.parseInt;
@@ -8,34 +10,23 @@ import static java.lang.Integer.parseInt;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int N = Integer.parseInt(br.readLine());
-        String[] st = br.readLine().split(" ");
-        int[] tsh = new int[st.length];
-        for(int i = 0; i<st.length; i++) {
-            tsh[i] = Integer.parseInt(st[i]);
-        }
 
-        String[] tp = br.readLine().split(" ");
-        int t = Integer.parseInt(tp[0]);
-        int p = Integer.parseInt(tp[1]);
 
-        int tcount = 0;
-        int pcount = 0;
-        for ( int i = 0; i<st.length; i++) {
+    }
+        public String[] solution(int[] numbers, int[] our_score, int[] score_list) {
+            int num_student = numbers.length;
+            String[] answer = new String[num_student];
 
-            if(tsh[i] % t > 0) {
-                tcount += tsh[i] / t +1;
-            } else {
-                tcount += tsh[i] / t;
+            for (int i = 0; i < num_student; i++) {
+                if (our_score[i] == score_list[i]) {
+                    answer[i] = "Same";
+                }
+                else {
+                    answer[i] = "Different";
+                }
             }
-            int sum = 0;
-            sum += tsh[i];
-            pcount = sum / st.length;
-        }
-        System.out.println(tcount+" "+  pcount);
 
-
+            return answer;
 
 
 

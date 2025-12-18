@@ -7,6 +7,7 @@ public class C04PersonMain {
 //        String email1 = "hong1@naver.com";
 //        int age1 = 30;
 //        printMember(name1,email1,age1);
+
 //        String name2 = "hong2";
 //        String email2 = "hong2@naver.com";
 //        int age2 = 40;
