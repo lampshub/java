@@ -38,12 +38,13 @@ public class C04Person {
 //    객체 메서드들간의 호출은 문제없이 호출가능
     public void testMethod1(){
         String temp = this.returnPersonInfo();
+        testMethod2();  //객체메서드에서 클래스메서드로 접근 가능
     }
 
 //    클래스메서드는 기본적으로 객체생성을 가정하지 않으므로, 클래스메서드내에서 객체메서드를 호출하는 것은 불가능(논리적모순)
     public static void testMethod2(){
 //        String temp = this.returnPersonInfo();
-
+//        testMethod1();  //클래스메서드에서 객체메서드로는 접근 불가능
     }
 
 }

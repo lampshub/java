@@ -18,7 +18,6 @@ public class C02MethodPractice {
     public static boolean isPrime(int num) {
         if (num <= 1)  return false;
 //            메서드에서 return을 만나면 메서드가 강제 종료
-
         for (int i = 2; i * i <= num; i++) {
             if (num % i == 0) {
             return false;
