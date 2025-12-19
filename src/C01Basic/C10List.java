@@ -29,7 +29,7 @@ public class C10List {
 //        int[] intArr = {10,20,30};
 //        List<Integer> myList5 = new ArrayList<>();
 //        for (int i : intArr) {
-//            myList5.add(i);
+//            myList5.add(i);   //오토박싱 int->Integer(wrapper클래스)
 //        }
 //        System.out.println(myList5);
 

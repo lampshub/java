@@ -8,7 +8,7 @@ import java.util.*;
 
 public class C09Array {
     public static void main(String[] args) throws IOException {
-//        배열표현식1. 배열 선언 후 값 할당 방식
+////        배열표현식1. 배열 선언 후 값 할당 방식
 //        java의 배열은 반드시 사전에 길이가 결정되어야함
 //        int[] arr1 = new int[]; 이렇게는 안됌
 //        int[] arr1 = new int[5];
@@ -118,9 +118,24 @@ public class C09Array {
 
 ////            정렬 알고리즘 구현 (선택정렬 알고리즘)
 ////        구현로직 1) 2중for문을 사용하여 index마다 최소값찾기 2) 현재위치와 자리 change
-//        1. 제일 작은 수 찾아 0번째랑 자리 바꾸기 min, replace?
-//        2. 1번째부터 제익 작은 수 찾아서 자리바꾸기
+//        1. 제일 작은 수 찾아 0번째랑 자리 바꾸기
+//        2. 1번째부터 제일 작은 수 찾아서 자리바꾸기
 //        int[] arr = {17, 12, 20, 10, 15};
+//      for(int i = 0; i< arr.length; i++) {
+//          int min = arr[i];
+//          int minIndex = i;
+//          for (int j = i + 1; j < arr.length; j++) {
+//              if (min > arr[j]) {
+//                  min = arr[j];
+//                  minIndex = j;
+//              }
+//          }
+//          int temp = arr[i];
+//          arr[i]=arr[minIndex];
+//          arr[minIndex] = temp;
+//      }
+//        System.out.println(Arrays.toString(arr));
+
 //        for (int i = 0; i < arr.length; i++) {
 //            int min = arr[i];
 //            int minIndex = i;
@@ -211,7 +226,7 @@ public class C09Array {
 //        Arrays.sort(answer);
 //        System.out.println(Arrays.toString(answer));
 
-//        프로그래머스 - 두 개 뽑아서 더하기 (조합+중복제거) **풀어보기**
+//        프로그래머스 - 두 개 뽑아서 더하기 (조합+중복제거)
 
 
 //        배열의 검색 : 복잡도 O(n)
@@ -296,7 +311,7 @@ public class C09Array {
 //        System.out.println(Arrays.deepToString(arr));  //각1차원배열의 값을 출력
 
             //프로그래머스 - 행렬의 덧셈
-            //프로그래머스 - K번째수 >다시풀어보기**
+            //프로그래머스 - K번째수
 
 ////        가변배열 : 2차원 배열에서 각 1차원의 배열의 길이가 서로 다를 수 있는 배열의 구조
 //            int[][] arr1 = {{1, 2}, {1, 2, 3}, {1, 2, 3, 4}};

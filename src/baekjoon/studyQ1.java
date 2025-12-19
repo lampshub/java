@@ -344,6 +344,42 @@ public class studyQ1 {
 //        }
 //            System.out.println(sb);
 
+////      수 찾기 - 이진탐색으로 풀어보기
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+//        int N = Integer.parseInt(br.readLine());
+//        String[] st1 = br.readLine().split(" ");
+//        int[] narr = new int[st1.length];
+//        for(int i = 0; i<st1.length; i++){
+//            narr[i] = Integer.parseInt(st1[i]);
+//        }
+//        Arrays.sort(narr);
+//        int M = Integer.parseInt(br.readLine());
+//        String[] st2 = br.readLine().split(" ");
+//        int[] marr = new int[st2.length];
+//        for(int i = 0; i<st2.length; i++){
+//            marr[i] = Integer.parseInt(st2[i]);
+//        }
+//         for(int i=0; i<M; i++) {
+//             int start = 0;
+//             int end = N - 1;
+//             int exist = 0;
+//             while (start <= end) {
+//                 int idx = (start + end) / 2;
+//                 if (narr[idx] == marr[i]) {
+//                     exist = 1;
+//                     break;
+//                 } else if (narr[idx] > marr[i]) {
+//                     end = idx - 1;
+//                 } else {
+//                     start = idx + 1;
+//                 }
+//             };
+//             bw.append (exist + "\n");
+//         }
+//         bw.flush();
+//         bw.close();
+
 
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        int N = Integer.parseInt(br.readLine());
@@ -394,8 +430,7 @@ public class studyQ1 {
 //            }
 
 
-//
-////      두 수 뽑아서 더하기
+////      프로그래머스 - 두 수 뽑아서 더하기
 //        int[] numbers = {2, 1, 3, 4, 1};
 //        Set<Integer> sum = new HashSet<>();
 //        for (int i = 0; i < numbers.length; i++) {
