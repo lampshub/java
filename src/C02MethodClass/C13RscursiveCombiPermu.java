@@ -86,6 +86,7 @@ public class C13RscursiveCombiPermu {
                  temp.remove(temp.size() - 1);
         }
     }
+//    add 하고 뒤따라서 remove하는 '백트레킹' 문제임!
 
 //    public static void permu(List<Integer> temp, int start, List<Integer> myList, int n, List<List<Integer>> doubleList) {
 //
