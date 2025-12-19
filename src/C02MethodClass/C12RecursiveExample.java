@@ -61,7 +61,7 @@ public class C12RecursiveExample {
         System.out.println(fibonacci(10));
     }
 
-//    누적합 메서드
+////    누적합 메서드
 //    public static int sumAcc(int start, int end){
 //        if(start > end) {
 //            return 0;
@@ -77,6 +77,7 @@ public class C12RecursiveExample {
 //        return end * factorial(end-1);
 //    }
 
+////    피보나치 수열 메서드
     public static int fibonacci(int n){
         if(n<=2){
             return 1;

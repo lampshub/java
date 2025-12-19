@@ -44,7 +44,7 @@ public class C13practice {
     }
 
 //    이중리스트에 조합(Combination) 담기 메서드
-    public static void comb(List<Integer> myList, int start, int end, int n,  )
+//    public static void comb(List<Integer> myList, int start, int end, int n,  )
 
 
 //    다중 for문 메서드
