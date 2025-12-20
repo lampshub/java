@@ -1,7 +1,7 @@
 package C04Interface.BankProgram;
 
 //핵심로직(잔고검증, 금액합산 등)을 수행하는 프로그램 계층
-public class BankKakaoService implements BankServiceInterface{
+public class BankTossService  implements BankServiceInterface{
     public void deposit(long money, BankAccount ba){
 //        현재 얼마있는 조회
         long current = ba.getBalance();

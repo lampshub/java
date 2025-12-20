@@ -3,52 +3,53 @@ package C05AnonymousLambda;
 //익명내부클래스
 public class C02AnonymousClass {
     public static void main(String[] args) {
-////        AbstractAnimal을 상속한 클래스가 별도로 존재하지 않고,
+////        AbstractAnimal을 상속한 클래스가 별도로 존재하지 않고, (extends한 자식클래스 없음)
 ////        내부에서 익명클래스가 만들어짐과 동시에 익명객체가 생성.
-//        AstractAnimal aa = new AstractAnimal() {
+//        AbstractAnimal aa = new AbstractAnimal() {  //여기서 extends한 자식클래스가 익명으로 만들어짐)
+//            // 위에 객체생성은 AbstractAnimal(객체만들수없음)의 객체가 아니고, 상속한 익명클래스로 객체가 생성됨
 //            @Override
 //            void makeSound() {
 //                System.out.println("멍멍");
 //            }
 //        };
-//        aa.makeSound();
+//        aa.makeSound(); //"멍멍"
 //        aa.eat();
 //
-////        구현체가 없는 추상클래스 또는 인터페이스는 익명객체로 생성.
-//        Animal1 a1 = new Animal1() {
+////        구현체가 없는 추상클래스 또는 인터페이스는 익명객체로 생성
+//        Animal1 a1 = new Animal1() {    //a1은 Animal1의 객체가 아니라, Animal1을 구현한 익명클래스의 익명객체
 //            @Override
 //            public void makeSound() {
-//
 //            }
 //
 //            @Override
 //            public void eat() {
-//
 //            }
 //        };
 
-////        인터페이스의 익명객체에 구현해야할 메서드가 1개밖에 없을때에는 람다표현식(화살표함수) 사용가능
+
 //        Animal2 a2 = new Animal2() {
 //            @Override
 //            public void makeSound() {
 //            }
 //        };
+////        인터페이스의 익명객체에 구현해야할 메서드가 1개밖에 없을때에는 람다표현식(화살표함수) 사용가능
 //        Animal2 a2_1 = () -> {
 //            System.out.println("hello world1");
 //            System.out.println("hello world2");
 //        };
 //        a2_1.makeSound();
-////        위에랑 다른 클래스를 기반으로 만들어진 다른 객체
+////        위에랑 다른 (익명)클래스를 기반으로 만들어진 다른 객체
 ////        실행문이 1줄 밖에 없을때에는 {} 생략 가능
 //        Animal2 a2_2 = () -> System.out.println("hello world1");
 //        a2_2.makeSound();
 
 ////        매개변수가 있는 익명객체의 람다함수 생성
 //        Animal3 a3_1 = (a, b, c) -> {
-//            return a + " , " + b + " , " + c;
+//            return a+ " , " + b + ", " + c;
 //        };
+//        System.out.println(a3_1.makeSound("java","python","C++"));
 ////        1줄일때 {} 생략시, return값이 있으면 return도 생략
-//        Animal3 a3_2 = (a, b, c) -> a + " , " + b + " , " + c;
+//        Animal3 a3_2 = (a, b, c) -> a + " , " + b + " , " + c;  //이코드를 보고 출력은 아니고 return이구나 알아야함
 //        System.out.println(a3_1.makeSound("java","python", "C++"));
 
 //        실습)
@@ -61,11 +62,10 @@ public class C02AnonymousClass {
             return a;
         };
         System.out.println(a4.makeSound("apple"," banana", 11 ));
-
     }
 }
 
-abstract class AstractAnimal{
+abstract class AbstractAnimal{
     abstract void makeSound();
     void eat(){
         System.out.println("동물이 먹이를 먹습니다.");

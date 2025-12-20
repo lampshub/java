@@ -13,26 +13,16 @@ public class C01InnerClass {
 class Member{
     private int a;
 
-    public Member(int a) {
-        this.a = a;
-    }
+    public Member(int a) { this.a = a; }
 
-    public int getA() {
-        return this.a;
-    }
+    public int getA() { return this.a; }
 
 //    static내부클래스 : Member의 static변수처럼 활용(접근시 Member.MemberInner)
     static class MemberInner{
         private int b;
 
-        public MemberInner(int b) {
-            this.b = b;
-        }
+        public MemberInner(int b) { this.b = b; }
 
-        public int getB(){
-            return b;
-        }
+        public int getB(){ return b; }
     }
-
-
 }
