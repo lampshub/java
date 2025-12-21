@@ -5,8 +5,9 @@ import java.util.*;
 public class C03ComparatorComparable {
     public static void main(String[] args) {
 //        java에서는 비교를 위한 인터페이스 대표적으로 2개 제공
-//        1. Comparator인터페이스 : 인터페이스내 compareTo메서드만 존재 (메서드가 1개이므로 익명객체를 (람다식으로) 넣기 좋음)
+//        1. Comparator인터페이스 : 인터페이스내 compareTo메서드만 존재
 //        2. Comparable인터페이스 : 인터페이스내 compare메서드만 존재
+//        => 메서드가 1개이므로 익명객체를 (람다식으로) 넣기 좋음
 
         List<Integer> myList  = new ArrayList<>();
         myList.add(20);

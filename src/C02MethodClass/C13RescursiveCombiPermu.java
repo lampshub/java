@@ -6,7 +6,7 @@ import java.util.List;
 //재귀함수 활용 대표적인 알고리즘 예시 : 백트래킹, dfs 알고리즘에서 주로 사용 (또는 분할정복)
 //백준 : 분류 - 백트래킹 / 깊이 우선 탐색(dfs) / 분할정복
 //대표적인 백트래킹 예시 : 조합과 순열에서 경우의수 찾기
-public class C13RscursiveCombiPermu {
+public class C13RescursiveCombiPermu {
     public static void main(String[] args) {
 //        for(int i = 0 ; i<3; i++) {
 //            for(int j=0; j<3; j++){

@@ -32,6 +32,7 @@ public class C11RecursiveBasicFlow {
         System.out.println("재귀 호출후 count : " + count);  // 3(네번째) -> 2(다섯번째) -> 1(여섯번째)
     }
 
+//    수업 25/12/18 51분
 //    객체를 매개변수로 활용한 재귀함수 내 변화과정 : 객체는 힙메모리를 통해 원본객체가 변경되므로, 재귀함수간에도 값의 변화를 공유
     public static void recur2(List<Integer> myList, int count, int target) {
         if (myList.size() == target) {

@@ -79,13 +79,13 @@ public class C13QueueStackDeque {
 
 ////        우선순위큐PQ : 데이터를 poll할때 정렬된 데이터결과값(최소값/최대값) 보장 (어렵고 중요!!)
 ////        지속적으로 데이터가 추가/제거되면서 전체데이터가 실시간으로 변경되는 상황에 사용
-//        Queue<Integer> pq = new PriorityQueue<>();
-//        pq.add(30);
-//        pq.add(20);
-//        pq.add(10);
-//        pq.add(40);
-//        pq.add(50);
-//        System.out.println(pq);
+        Queue<Integer> pq = new PriorityQueue<>();
+        pq.add(30);
+        pq.add(20);
+        pq.add(10);
+        pq.add(50);
+        pq.add(40);
+        System.out.println(pq); //queue의 최상단에 가장 작은값 위치 [10, 30,20,50,40]
 //        while (!pq.isEmpty()) {
 ////            poll할때마다 최소값을 추출하게되고, 복잡도 log(n). peek은 최소값을 확인만 하고 추출은 X, 복잡도 log(n).
 ////            전체 데이터를 모두 poll하면 복잡도 n*log(n)
@@ -120,14 +120,14 @@ public class C13QueueStackDeque {
 //        프로그래머스 : 같은 숫자는 싫어
 
 
-//        deque : addFirst, addLast, pollFirst, pollLast, peekFirst, peekLast
-        Deque<Integer> myDeque = new ArrayDeque<>();
-        myDeque.addLast(10);
-        myDeque.addLast(20);
-        myDeque.addFirst(30); //30, 10, 20
-        System.out.println(myDeque.pollLast()); //20
-        System.out.println(myDeque.pollFirst()); //30
-        System.out.println(myDeque.pollFirst()); //10
+////        deque : addFirst, addLast, pollFirst, pollLast, peekFirst, peekLast
+//        Deque<Integer> myDeque = new ArrayDeque<>();
+//        myDeque.addLast(10);
+//        myDeque.addLast(20);
+//        myDeque.addFirst(30); //30, 10, 20
+//        System.out.println(myDeque.pollLast()); //20
+//        System.out.println(myDeque.pollFirst()); //30
+//        System.out.println(myDeque.pollFirst()); //10
 
 
 
