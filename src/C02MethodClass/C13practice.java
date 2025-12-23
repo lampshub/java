@@ -1,6 +1,7 @@
 package C02MethodClass;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class C13practice {
@@ -17,6 +18,58 @@ public class C13practice {
         myList.add(2);
         myList.add(3);
         myList.add(4);
+//        System.out.println(myList);
+//
+//        List<List<Integer>> doubleList = new ArrayList<>();
+//        List<Integer> temp = new ArrayList<>();
+//        for(int i = 0; i<myList.size(); i++){
+//            temp.add(myList.get(i));
+//            for(int j=i+1; j<myList.size(); j++){
+//                temp.add(myList.get(j));
+//                doubleList.add(new ArrayList<>(temp));
+//                temp.remove(temp.size()-1);
+//            }
+//            temp.remove(temp.size()-1);
+//        }
+//        System.out.println(doubleList);
+//        List<List<Integer>> doubleList = new ArrayList<>();
+//        combi(new ArrayList<>(), 0, myList, 2, doubleList);  //원본 myList, 2개짜리 조합, 조합을 담을 이중리스트
+//        System.out.println(doubleList);
+        List<List<Integer>> doubleList = new ArrayList<>();
+        permu(new ArrayList<>(), 0, myList, 2, doubleList);  //원본 myList, 2개짜리 조합, 조합을 담을 이중리스트
+
+
+    }
+    public static void combi(List<Integer> temp, int start, List<Integer> myList, int n, List<List<Integer>> doubleList){
+        if(temp.size()==n){
+            doubleList.add(new ArrayList<>(temp));
+            return;
+        }
+        for(int i = start; i<myList.size(); i++){
+            temp.add(myList.get(i));
+            combi(temp, i+1, myList, n, doubleList);
+            temp.remove(temp.size()-1);
+        }
+    }
+//    12/18 오후수업영상 32분
+    public static void permu(List<Integer> temp, int start, List<Integer> myList, int n, List<List<Integer>> doubleList){
+        if(temp.size()==n){
+            doubleList.add(new ArrayList<>(temp));
+            return;
+        }
+        for(int i = start; i<myList.size(); i++){
+            temp.add(myList.get(i));
+            combi(temp, i+1, myList, n, doubleList);
+            temp.remove(temp.size()-1);
+        }
+    }
+
+
+//        List<Integer> myList = new ArrayList<>();
+//        myList.add(1);
+//        myList.add(2);
+//        myList.add(3);
+//        myList.add(4);
 //        List<List<Integer>> doubleList = new ArrayList<>();
 //        for(int i = 0; i<myList.size(); i++){
 //            for(int j = i+1; j<myList.size(); j++){
@@ -28,35 +81,35 @@ public class C13practice {
 //        }
 //        System.out.println(doubleList);
 
-//  재귀함수로 만들기 위해 반복되는 for문 구조를 같게 만들어야함
-        List<List<Integer>> doubleList = new ArrayList<>();
-        List<Integer> temp = new ArrayList<>();
-        for(int i = 0; i<myList.size(); i++){
-            temp.add(myList.get(i));
-            for(int j = i+1; j<myList.size(); j++){
-                temp.add(myList.get(j));
-                doubleList.add(new ArrayList<>(temp));
-                temp.remove(temp.size()-1);
-            }
-            temp.remove(temp.size()-1);
-        }
-        System.out.println(doubleList);
-    }
-
-//    이중리스트에 조합(Combination) 담기 메서드
-//    public static void comb(List<Integer> myList, int start, int end, int n,  )
-
-
-//    다중 for문 메서드
-    public static void recurFor(int start, int end){
-        if(start == end) {
-            System.out.println("hello");
-            return;
-        }
-        for(int i=0; i<3; i++){
-            recurFor(start+1, end);
-        }
-    }
+////  재귀함수로 만들기 위해 반복되는 for문 구조를 같게 만들어야함
+//        List<List<Integer>> doubleList = new ArrayList<>();
+//        List<Integer> temp = new ArrayList<>();
+//        for(int i = 0; i<myList.size(); i++){
+//            temp.add(myList.get(i));
+//            for(int j = i+1; j<myList.size(); j++){
+//                temp.add(myList.get(j));
+//                doubleList.add(new ArrayList<>(temp));
+//                temp.remove(temp.size()-1);
+//            }
+//            temp.remove(temp.size()-1);
+//        }
+//        System.out.println(doubleList);
+//    }
+//
+////    이중리스트에 조합(Combination) 담기 메서드
+////    public static void comb(List<Integer> myList, int start, int end, int n,  )
+//
+//
+////    다중 for문 메서드
+//    public static void recurFor(int start, int end){
+//        if(start == end) {
+//            System.out.println("hello");
+//            return;
+//        }
+//        for(int i=0; i<3; i++){
+//            recurFor(start+1, end);
+//        }
+//    }
 
 
 
