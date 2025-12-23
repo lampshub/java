@@ -1,13 +1,11 @@
 package baekjoon;
 
 import java.io.*;
-import java.util.Comparator;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 public class B11286AbsHeap {
     public static void main(String[] args) throws IOException {
-        BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int N = Integer.parseInt(br.readLine());
         Queue<Integer> que = new PriorityQueue<>(new Comparator<Integer>() {
