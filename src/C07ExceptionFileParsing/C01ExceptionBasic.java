@@ -29,7 +29,7 @@ public class C01ExceptionBasic {
             System.out.println("예상치 못한 에러가 발생했습니다.");
             e.printStackTrace();
         } finally {
-            System.out.println("예외가 발생하든 발생하지 않든 무조건 실행되는 구문");
+            System.out.println("예외가 발생하든 발생하지 않든 무조건 실행되는 구문 ");
         }
 
 //      예외처리를 하지 않을경우 프로그램은 강제종료, 예외처리를 할 경우 프로그램은 예외가 발생하더라도 지속
