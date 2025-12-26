@@ -1,14 +1,10 @@
 package C07ExceptionFileParsing;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
-import java.util.List;
 
 public class C03File {
     public static void main(String[] args) throws IOException {
@@ -41,5 +37,11 @@ public class C03File {
         Files.write(filePath, "홍길동2\n".getBytes(), StandardOpenOption.APPEND); //추가모드
 
 
+    }
+
+    public static class C02Practice {
+        public static void main(String[] args) {
+
+        }
     }
 }

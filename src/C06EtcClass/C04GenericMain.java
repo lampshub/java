@@ -2,6 +2,7 @@ package C06EtcClass;
 
 import java.sql.SQLOutput;
 import java.util.*;
+import java.util.stream.Stream;
 
 public class C04GenericMain {
     public static void main(String[] args) {
@@ -27,6 +28,8 @@ public class C04GenericMain {
 //    제네릭의 사용 예시
         List<String> myList = new ArrayList<>();
         Map<String, String> map = new HashMap<>();
+        Stream<String> myStream;
+        Optional<Student> myStudent;
 
     }
 
@@ -40,6 +43,7 @@ public class C04GenericMain {
         arr[a]=arr[b];
         arr[b] = temp;
     }
+//    메서드차원에서 제네릭사용
 //    제네릭메서드는 반환타입 왼쪽에 <T>라고 선언
 //    이때 T는 참조형변수인 객체타입만을 허용
     static <T> void allChange(T[] arr, int a, int b){
@@ -49,6 +53,7 @@ public class C04GenericMain {
     }
 }
 
+//클래스차원에서 제네릭 사용
 class GenericPerson<T>{
     private T value;
 
