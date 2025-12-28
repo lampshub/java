@@ -2,7 +2,7 @@ package C02MethodClass;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//수업 25/12/18 3:19:20
 //재귀함수 활용 대표적인 알고리즘 예시 : 백트래킹, dfs 알고리즘에서 주로 사용 (또는 분할정복)
 //백준 : 분류 - 백트래킹 / 깊이 우선 탐색(dfs) / 분할정복
 //대표적인 백트래킹 예시 : 조합과 순열에서 경우의수 찾기
@@ -40,7 +40,7 @@ public class C13RescursiveCombiPermu {
 //        }
 //        System.out.println(doubleList);
 
-////        재귀함수를 만들기 위한 for문 변형
+////        재귀함수를 만들기 위한 for문 변형 (조합combi)
 //        List<List<Integer>> doubleList = new ArrayList<>();
 //        List<Integer> temp = new ArrayList<>();
 //        for (int i = 0; i < myList.size(); i++) {
@@ -55,6 +55,30 @@ public class C13RescursiveCombiPermu {
 //        System.out.println(doubleList);
 //    }
 
+//    add 하고 뒤따라서 remove하는 '백트레킹' 문제임!
+
+
+////        재귀함수를 만들기 위한 for문 변형 (순열permu)
+//        List<List<Integer>> doubleList = new ArrayList<>();
+//        List<Integer> temp = new ArrayList<>();
+//        boolean[] visitted = new boolean[myList.size()];
+//
+//        for (int i = 0; i < myList.size(); i++) {
+//            temp.add(myList.get(i));
+//            visited[i] = true;
+//            for (int j = i + 1; j < myList.size(); j++) {
+//                if (visited[j]) continue;       //visited[j]는 visited[j]==true 를 의미
+//                temp.add(myList.get(j));
+//                visited[j] = true;
+//                doubleList.add(new ArrayList<>(temp));
+//                temp.remove(temp.size() - 1);
+//                visited[j] = false;
+//            }
+//            temp.remove(temp.size() - 1);
+//            visited[i] = false;
+//        }
+//        System.out.println(doubleList);
+//    }
 
     List<Integer> myList = new ArrayList<>();
         myList.add(1);
@@ -67,12 +91,27 @@ public class C13RescursiveCombiPermu {
 //        combi(new ArrayList<>(), 0,  myList, 2, doubleList);   //원본, 2개짜리 조합, 조합을 담을 이중리스트
 //        System.out.println(doubleList);
 
-        List<List<Integer>> doubleList = new ArrayList<>();
-
-//        permu(new ArrayList<>(), 0,  myList, 2, doubleList);   //원본, 2개짜리 조합, 조합을 담을 이중리스트
-        System.out.println(doubleList);
+//        List<List<Integer>> doubleList = new ArrayList<>();
+//        permu(new ArrayList<>(), 0,  myList, 2, doubleList);
+//        System.out.println(doubleList);
 
 //    백준 : 15649(N과 M), 6603(로또)
+    }
+
+    //    12/18 오후수업영상 32분
+    public static void permu(boolean[] visited, List<Integer> myList, List<List<Integer>> doubleList, List<Integer> temp, int n) {
+        if (temp.size() == n) {
+            doubleList.add(new ArrayList<>(temp));
+            return;
+        }
+        for (int i = 0; i < myList.size(); i++) {
+            if (visited[i]) continue;
+            temp.add(myList.get(i));
+            visited[i] = true;
+            permu(visited, myList, doubleList, temp, n);
+            temp.remove(temp.size() - 1);
+            visited[i] = false;
+        }
     }
 
         public static void combi(List<Integer> temp, int start, List<Integer> myList, int n, List<List<Integer>> doubleList){
@@ -86,55 +125,6 @@ public class C13RescursiveCombiPermu {
                  temp.remove(temp.size() - 1);
         }
     }
-//    add 하고 뒤따라서 remove하는 '백트레킹' 문제임!
-
-//    public static void permu(List<Integer> temp, int start, List<Integer> myList, int n, List<List<Integer>> doubleList) {
-//
-//
-//        List<List<Integer>> doubleList = new ArrayList<>();
-//        List<Integer> temp = new ArrayList<>();
-//        boolean[] visitted = new boolean[myList.size()];
-//
-//        for (int i = 0; i < myList.size(); i++) {
-//            temp.add(myList.get(i));
-//            visitted[i] = true;
-//            for (int j = i + 1; j < myList.size(); j++) {
-//                if (visitted[j]) continue;       //visitted[j]는 visitted[j]==true 를 의미
-//                temp.add(myList.get(j));
-//                visitted[j] = true;
-//                doubleList.add(new ArrayList<>(temp));
-//                temp.remove(temp.size() - 1);
-//                visitted[j] = false;
-//            }
-//            temp.remove(temp.size() - 1);
-//            visitted[i] = false;
-//        }
-//        System.out.println(doubleList);
-//    }
-
-//        if(temp.size()==n) {
-//            doubleList.add(new ArrayList<>(temp));
-//            return;
-//        }
-//        for (int i=0; i < myList.size(); i++) {
-//            if(i==myList.get(i)) continue;
-//
-//            temp.add(myList.get(i));
-//            combi(temp, i, myList, n, doubleList);
-//            temp.remove(temp.size() - 1);
-
-
-
-//        public static void recurFor(int start, int end){
-//        if (start == end) {
-//            System.out.println("hello world" );
-//            return;
-//        }
-//        for (int i = 0; i < 3; i++) {
-////            System.out.println("hello world"); //이렇게 실행하면 3^n 형식이 아님
-//            recurFor(start+1, end);
-//            }
-//        }
 
 
 
