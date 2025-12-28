@@ -29,17 +29,26 @@ public class C11practice {
         System.out.println("재귀 호출후 count : " + count);
     }
 
-    public static void recur2(List<Integer> mylist, int count, int target) {
-        if(count == target){
+//    public static void recur2(List<Integer> mylist, int count, int target) {
+//        if(count == target){
+//            return;
+//        }
+//        mylist.add(count);
+//        System.out.println(mylist);
+//        recur2(mylist, count + 1, target);
+//        System.out.println(mylist);
+//        mylist.remove(mylist.size()-1);
+//    }
+
+    public static void recur2(List<Integer> myList, int count, int target){
+        if(myList.size() == target){
             return;
         }
-        mylist.add(count);
-        System.out.println(mylist);
-        recur2(mylist, count + 1, target);
-        System.out.println(mylist);
-        mylist.remove(mylist.size()-1);
+        myList.add(count);
+        recur2(myList, count+1, target);
+        System.out.println(myList);
+        myList.remove(myList.size()-1);
     }
-
 
     }
 

@@ -1,5 +1,7 @@
 package C07ExceptionFileParsing;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -32,8 +34,8 @@ public class C03File {
 
 //        파일에 문자열 쓰기
         Path filePath = Paths.get("src/C07ExceptionFileParsing/test.txt");
-//        Files.write(filePath, "홍길동0".getBytes(), StandardOpenOption.CREATE_NEW); //새로만들기
-        Files.write(filePath, "홍길동1\n".getBytes(), StandardOpenOption.WRITE); //덮어쓰기
+//        Files.write(filePath, "홍길동0".getBytes(), StandardOpenOption.CREATE_NEW); //새로만들기(없던 폴더가 새로 생김)
+//        Files.write(filePath, "홍길동1\n".getBytes(), StandardOpenOption.WRITE); //덮어쓰기
         Files.write(filePath, "홍길동2\n".getBytes(), StandardOpenOption.APPEND); //추가모드
 
 
