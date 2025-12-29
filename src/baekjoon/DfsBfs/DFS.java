@@ -14,7 +14,7 @@ public class DFS {
 //        V = v;
 //        adj = new LinkedList[v];
 //        for (int i = 0; i < v; i++) {       //인접리스트 초기화
-//            adj[i] = new LinkedList<>();    //리스트 v개 생성?
+//            adj[i] = new LinkedList<>();    //리스트 v개 생성
 //        }
 //    }
 //    //노드를 연결 v->w
